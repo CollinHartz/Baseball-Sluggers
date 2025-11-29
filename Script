@@ -1,0 +1,26 @@
+###Set working Directory
+setwd("/courses/STA145/hartzc1")
+
+### Upload Data
+library(readr)
+data <- read_csv("data.csv")
+
+### Descriptive Statistics
+table(data$silver_slugger)
+
+summary(data$slg_carrer_average)
+
+sd(data$slg_carrer_average)
+
+# Box plot 
+
+library(ggplot2)
+ggplot(data, aes(x = as.factor(silver_slugger), y = slg_carrer_average, fill = silver_slugger)) +
+  geom_boxplot() +
+  labs(
+    title = "Comparison Between Slug Career Average And Silver Slugger Winners",
+    x = "Silver Slugger Winners",
+    y = "Slug Career Average"
+) +
+theme_minimal() +
+theme(legend.position = "none")
