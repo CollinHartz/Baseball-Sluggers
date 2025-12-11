@@ -4,5 +4,7 @@ My replication package for my stats class STA-145 final project. I looked at the
 The data collected for this project was player statistics and player awards. I used mostly fangraphs to find my data on the players and their career stats. Beingf that there are multiple positiosn in baseball I deided to expclude pitchers as they have their own set of stats. The main goal of this analysis was to see if players with a higher slug average won the award more than those who had a lower slug average. I searched fangraphs for the slugging average looking at all 120 players career average over the years. then looking up if they ever won the silver slugger award and comapring the two.
 # Operationalization
 The varaibles I had to work with were Career Slug Average and Silver Slugger Winner.
+
 The first variable being Career Slug Average, ever game they played in their career was taken into account for this variable. It was then caluclauted to get a number between 1 and 0 with 1 being everytime they bat they slug and 0 being every time they bat they fail. These numbers were taken and handed to the respective players.
+
 The second variable was Silver Slugger Winner which is an award given to the best offensive player of wach position for a given year. This is a yes or no their is no kinda winning they either got the award of did not.
