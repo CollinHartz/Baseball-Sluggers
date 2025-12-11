@@ -29,6 +29,7 @@ ggplot(data, aes(x = as.factor(silver_slugger), y = slg_carrer_average, fill = s
 theme_minimal() +
 theme(legend.position = "none")
 
+# T-Test
+
 t_test_result <- t.test(slg_carrer_average ~ silver_slugger, data=data)
 print(t_test_result)
-
